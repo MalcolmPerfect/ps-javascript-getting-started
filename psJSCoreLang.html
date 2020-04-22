@@ -1,0 +1,50 @@
+<!-- //this file is the various notes from the pluralsight course
+//https://app.pluralsight.com/paths/skill/javascript-core-language -->
+
+<body>
+    <button onclick="forInSample();">for/in sample</button>
+    <button onclick="forOfSample();">for/of sample</button>
+    <script>
+        'use strict';
+
+        function forInSample() {
+            //for/in iterates over the elements of an object
+            let product = {
+                "productID": 10,
+                "costToBuild": 100,
+                "price": 150,
+                profit: function () {
+                    return this.price - this.costToBuild;
+                }
+            }
+
+            for (const key in product) {
+                console.log(key + ":" + product[key]);
+            }
+            //console.log("hello");
+        }
+
+
+        function forOfSample() {
+            //for/of iterates over each array item
+            let products = [
+                {
+                    "productID": 10,
+                    "costToBuild": 100,
+                    "price": 150
+                },
+                {
+                    "productID": 11,
+                    "costToBuild": 120,
+                    "price": 170
+                }
+            ];
+            for (const item of products){
+                console.log(JSON.stringify(item));
+            }
+
+        }
+    </script>
+
+
+</body>
