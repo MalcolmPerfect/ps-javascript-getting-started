@@ -41,13 +41,23 @@
  - === vs ==. == does type conversion, usually don't want this. e.g. 1 == "1"
 
 ### functions
- - function expression
+ - https://developer.mozilla.org/en-US/docs/web/JavaScript/Reference/Operators/function
  - if don't supply parameter, value is undefined. Same if don't return a value to caller
  - scope. functions have access to variables outside of scope
+ - arguments allows to iterate through all arguments passed into function
+ - IIFE function. no name and defined inside parenthesis, wiht a closing ()
+ - closures; return a function which contains its own environment; its own variables (see psJavaSCriptFunctions)
 
 ### objects
  - json notation. Can set using either . or []
  - functions have to use the this keyword to access obj properties
  - objects passed to functions by reference
+ - standard built-in objects https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
  
+### arrays
+ - not actually a native type. Zero-based
+ - initialise with [] or Array.of
+ - push/pop add/remove from end, unshift/shift at start
+ - slice to take a copied slice, splice to remove and/or insert items
+ - searching/looping: filter, find, forEach all take a function
 
